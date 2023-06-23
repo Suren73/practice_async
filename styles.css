@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --item-background: #fafafa;
+  --main-background: #ffffff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--main-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-height: 100vh;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+#loader {
+  position: fixed;
+  top: 50%;
+  left: auto;
+  color: rebeccapurple;
+  font-size: 20px;
+}
+
+#data-container {
+  margin: 0 0 50px;
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.item {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #000;
+  border-radius: 5px;
+
+  list-style-type: none;
+  background: var(--item-background);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.item_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+  color: #000;
+  margin: 0;
+  padding: 5px 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.item_link-hover {
+  background: bisque;
+}
+
+.user-container {
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 1px 1px 3px blanchedalmond;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.user-container h2 {
+  margin: 0;
+  padding: 0 0 15px;
+}
+
+.user-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
